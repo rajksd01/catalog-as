@@ -14,9 +14,14 @@ for (let key in input) {
         roots.push([x, y]);  
     }
 }
+if (n < k) {
+    console.error(`Error: Insufficient shares. Required: ${k}, Provided: ${n}`);
+    process.exit(1); // Terminate the script with an error code
+}
 
 
 function lagrangeInterpolation(roots, x) {
+   
     let result = 0;
     const n = roots.length;
     
