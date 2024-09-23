@@ -16,7 +16,7 @@ for (let key in input) {
 }
 if (n < k) {
     console.error(`Error: Insufficient shares. Required: ${k}, Provided: ${n}`);
-    process.exit(1); // Terminate the script with an error code
+    process.exit(1); 
 }
 
 
